@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>python разработчик - telegram боты и веб сервисы</title>
+  <meta name="description" content="разработка telegram ботов и веб сервисов на python Отказоустойчивые высоконагруженные проекты, автоматизация, интеграция API.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="stars-canvas" aria-hidden="true"></canvas>
+  
+  <header class="header" id="siteHeader">
+    <div class="container header__inner">
+      <a href="#home" class="logo" data-route="home">PY<span class="logo__accent">/</span>DEV</a>
+
+      <nav class="nav nav--desktop" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link" data-route="home">Главная</a></li>
+          <li><a href="#about" class="nav__link" data-route="about">Обо мне</a></li>
+          <li><a href="#projects" class="nav__link" data-route="projects">Проекты</a></li>
+          <li><a href="#contacts" class="nav__link" data-route="contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+    <div class="mobile-nav__top">
+      <span class="logo">PY<span class="logo__accent">/</span>DEV</span>
+      <button class="mobile-nav__close" id="mobileNavClose" aria-label="Закрыть меню">&times;</button>
+    </div>
+    <ul class="mobile-nav__list">
+      <li><a href="#home" class="mobile-nav__link" data-route="home">Главная</a></li>
+      <li><a href="#about" class="mobile-nav__link" data-route="about">Обо мне</a></li>
+      <li><a href="#projects" class="mobile-nav__link" data-route="projects">Проекты</a></li>
+      <li><a href="#contacts" class="mobile-nav__link" data-route="contacts">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="page" data-page="home" id="home">
+      <div class="container hero">
+        <p class="hero__eyebrow">Python/Backend</p>
+        <h1 class="hero__title">
+          Разработка Telegram ботов и веб сервисов на <span class="text-gradient">Python</span>.
+        </h1>
+        <p class="hero__subtitle">
+          Инструменты, которые выдерживают нагрузку, работают без сбоев и решают задачи бизнеса
+        </p>
+        <div class="hero__actions">
+          <a href="#contacts" class="btn btn--primary" data-route="contacts">Связаться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" data-page="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">О специалисте</p>
+          <h2 class="section-header__title">Обо мне</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="card about__text">
+            <p>
+              Занимаюсь коммерческой разработкой на Python уже 3 года. За это время прошёл обучение
+              в Академии TOP (Краснодар) — закончил 3 курса и взял дополнительный год углублённого
+              изучения Python. Также обучался в университете Синергия.
+            </p>
+            <p>
+              Специализируюсь на создании отказоустойчивых telegram ботов, автоматизации процессов
+              и интеграции API
+            </p>
+          </div>
+
+          <div class="card stack-card">
+            <p class="stack-card__title">Стек</p>
+            <ul class="stack-list">
+              <li>Python</li>
+              <li>Asyncio</li>
+              <li>Aiogram</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Docker</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" data-page="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Портфолио</p>
+          <h2 class="section-header__title">Проекты</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="card project-card">
+            <p class="project-card__index">Проект — 01</p>
+            <h3 class="project-card__title">Игровой бот Казино</h3>
+            <a href="https://t.me/winpaco" target="_blank" rel="noopener" class="project-card__handle">@winpaco</a>
+            <p class="project-card__desc">
+              проект с проработанной математикой игры и защитой от сбоев
+              при пиковых нагрузках
+            </p>
+            <span class="project-card__badge">120 000+ пользователей</span>
+          </article>
+
+          <article class="card project-card">
+            <p class="project-card__index">Проект — 02</p>
+            <h3 class="project-card__title">Обход блокировок</h3>
+            <a href="https://t.me/ONYXVPNRU_BOT" target="_blank" rel="noopener" class="project-card__handle">@ONYXVPNRU_BOT</a>
+            <p class="project-card__desc">
+              VPN бот с функцией обхода белых списков
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <p class="project-card__index">Проект — 03</p>
+            <h3 class="project-card__title">Трекер подарков</h3>
+            <a href="https://t.me/getSendGiftsProBot" target="_blank" rel="noopener" class="project-card__handle">@getSendGiftsProBot</a>
+            <p class="project-card__desc">
+              Бот для отслеживания и аналитики Telegram подарков с обязательной
+              проверкой подписки на каналы
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <p class="project-card__index">Проект — 04</p>
+            <h3 class="project-card__title">База верификации</h3>
+            <a href="https://t.me/Diamond_Secure_Bot" target="_blank" rel="noopener" class="project-card__handle">@Diamond_Secure_Bot</a>
+            <p class="project-card__desc">
+              Инструмент для проверки контрагентов глобальная база данных мошенников 
+            </p>
+          </article>
+
+          <article class="card project-card project-card--wide">
+            <p class="project-card__index">Проект — 05</p>
+            <h3 class="project-card__title">Дополнительный опыт</h3>
+            <p class="project-card__desc">
+              Участвовал в команде разработки масштабного проекта Atlanta VPN, а также создавал
+              коммерческие веб сайты 
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="page" data-page="contacts" id="contacts">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Связь</p>
+          <h2 class="section-header__title">Контакты</h2>
+        </div>
+
+        <div class="contacts__grid">
+
+          <form class="card contact-form" id="contactForm" novalidate>
+            <div class="form__group">
+              <label for="name" class="form__label">Имя</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Как к вам обращаться" autocomplete="name" required>
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Сообщение</label>
+              <textarea id="message" name="message" class="form__textarea" placeholder="Опишите задачу" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Отправить</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="card contact-info">
+            <ul class="contact-info__list">
+              <li class="contact-info__item">
+                <span class="contact-info__label">Telegram</span>
+                <a href="https://t.me/sexualkilled" target="_blank" rel="noopener" class="contact-info__value">@sexualkilled</a>
+              </li>
+              <li class="contact-info__item">
+                <span class="contact-info__label">Email</span>
+                <a href="mailto:sabotagerabota@mail.ru" class="contact-info__value">sabotagerabota@mail.ru</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> · Python-разработчик · <a href="mailto:sabotagerabota@mail.ru">sabotagerabota@mail.ru</a></p>
+    </div>
+  </footer>
+
+  <script src="js/stars.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
